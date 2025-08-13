@@ -1,0 +1,15 @@
+Add the following inside android { } in android/app/build.gradle.kts (if you generated platforms with `flutter create .`):
+android {
+    compileSdk = 34
+
+    ndkVersion = "27.0.12077973" // <-- add this to match plugin NDK requirement
+
+    defaultConfig {
+        applicationId = "com.example.picsum_app"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+    }
+    // ...
+}
